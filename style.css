@@ -14,3 +14,20 @@ img {
     text-shadow: 2px 2px 4px #4d4848;
 }
 
+body{
+    font-family: 'Fredoka One', cursive;
+}
+h1{
+    font-size: 72px !important;
+    color: #FF9191;
+    text-align: center;
+}
+h2{
+    font-size: 16px !important;
+    color: #5B5151;
+    text-align: center;
+}
+#hero{
+    display: block;
+    margin: auto;
+}
