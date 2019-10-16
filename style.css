@@ -1,0 +1,16 @@
+img {
+ width: 400px;
+ height: 450px;
+ object-fit: cover;
+}
+
+.titulo-carousel {
+    color: white;
+    text-shadow: 2px 2px 4px #4d4848;
+  }
+
+.texto-carousel{
+    color: white;
+    text-shadow: 2px 2px 4px #4d4848;
+}
+
