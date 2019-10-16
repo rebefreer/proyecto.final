@@ -1,6 +1,6 @@
-img {
- width: 400px;
- height: 450px;
+.img-carousel {
+ width: 900px;
+ height: 420px;
  object-fit: cover;
 }
 
