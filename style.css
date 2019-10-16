@@ -7,11 +7,13 @@
 .titulo-carousel {
     color: white;
     text-shadow: 2px 2px 4px #4d4848;
+    font-size: 20px;
   }
 
 .texto-carousel{
     color: white;
     text-shadow: 2px 2px 4px #4d4848;
+    font-size: 15px;
 }
 
 body{
