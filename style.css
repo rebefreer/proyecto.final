@@ -68,3 +68,16 @@ button.btn.btn-danger.btn-sm.button-color {
     display: block;
     margin: auto;
 }
+
+.text-form-adopt {
+    font-size: 15px;
+}
+
+.modal-title {
+    font-size: 20px;
+}
+
+.text-form2 {
+    font-weight: 2px;
+    font-size: 15px;
+}

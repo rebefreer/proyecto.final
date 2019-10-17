@@ -120,7 +120,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Mima</h5>
                         <p class="card-text">Tiene 3 años y es sumamente cariñosa, le encantan los niños.</p>
-                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal" data-target="#form-modal">Solicitar adopción</button>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
                     </div>
                 </div>
                 <div class="card  border-0">
@@ -131,7 +132,8 @@
                         <p class="card-text">Fue abandonado por su familia y rescatado, necesita mucho amor en su nuevo
                             hogar.
                         </p>
-                        <button type="button " class="btn btn-danger btn-sm button-color" data-toggle="modal" data-target="#form-modal">Solicitud adopción</button>
+                        <button type="button " class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitud adopción</button>
                     </div>
 
                 </div>
@@ -143,7 +145,8 @@
                         <p class="card-text">La abandonaron luego de tener a sus hijos, la castramos y desparasitamos.
                             Esta
                             lista para recibir mucho amor.</p>
-                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal" data-target="#form-modal">Solicitar adopción</button>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
                     </div>
 
                 </div>
@@ -155,7 +158,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Totto</h5>
                         <p class="card-text">Este caballero tiene 1 añito y muchisima energia para jugar.</p>
-                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal" data-target="#form-modal">Solicitud adopción</button>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitud adopción</button>
                     </div>
 
                 </div>
@@ -168,7 +172,8 @@
                             encontrarle
                             un
                             futuro dueño que la haga muy feliz.</p>
-                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal" data-target="#form-modal">Solicitar adopción</button>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
                     </div>
                 </div>
                 <div class="card border-0">
@@ -177,31 +182,65 @@
                     <div class="card-body">
                         <h5 class="card-title">Mimi</h5>
                         <p class="card-text"> Es una perrita adulta de tamano pequeno, sumamente dulce y juguetona </p>
-                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal" data-target="#form-modal">Solicitar adopción</button>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
                     </div>
 
                 </div>
             </div>
         </div>
     </div>
-   
+
     <!-- Modal -->
     <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Formuario para solicitud de adopción</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    ...
+                    <form>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label class="text-form-adopt" for="exampleFormControlTextarea1">Nombre completo</label>
+                                <textarea class="form-control text-form-adopt" id="exampleFormControlTextarea1"
+                                    rows="1"></textarea>
+                                <label class="text-form-adopt" for="exampleFormControlTextarea1">Número
+                                    telefónico</label>
+                                <input type="email" class="form-control text-form2" id="exampleFormControlInput1"
+                                    placeholder="8888-8888">
+                                <label class="text-form-adopt" for="exampleFormControlInput1">Correo electrónico</label>
+                                <input type="email" class="form-control text-form2" id="exampleFormControlInput1"
+                                    placeholder="nombre@ejemplo.com">
+                                <!-- <label class="text-form-adopt" for="exampleFormControlSelect1">¿Posee usted otros animales?</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                    <option>Si</option>
+                                    <option>No</option>
+                                </select> -->
+                                <h3 class="text-form-adopt">¿Posee usted otras mascotas?</h3>
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label text-form-adopt" for="defaultCheck1">
+                                        Si
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label text-form-adopt" for="defaultCheck1">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                    </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary button-color">Enviar</button>
                 </div>
             </div>
         </div>
@@ -209,18 +248,7 @@
 
 
 
-    <!-- footer -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
 
-            </div>
-            <div class="col-md-3">
-            </div>
-            <div class="col-md-6">
-            </div>
-        </div>
-    </div>
 
 
 
@@ -237,7 +265,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-        <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
