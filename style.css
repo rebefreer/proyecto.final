@@ -33,3 +33,38 @@ h2{
     display: block;
     margin: auto;
 }
+
+/* .img-cards {
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+} */
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-text {
+    font-size: 15px;
+}
+
+.button-color {
+    background-color: #FF9191;
+    border-color: #FF9191;
+
+}
+
+.card-deck2-mt {
+    margin-top: 30px;
+}
+
+/* #5CDED0; */
+
+.container-backg {
+    background-image: linear-gradient(#E3F6F5, #5CDED0)
+}
+
+button.btn.btn-danger.btn-sm.button-color {
+    display: block;
+    margin: auto;
+}
