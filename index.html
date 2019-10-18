@@ -1,83 +1,346 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>homepaws</title>
-  </head>
-  <body>
-    <div class="container-fluid">
-     <nav class="navbar navbar-expand-lg navbar-light bg-transparent float-right">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-            
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item inactive">
-                <a class="nav-link" href="#">Haz homepaws tu homepage <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Tips</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-            </ul>
-        </div>
-              </nav>
-           
+    <link rel="shortcut icon" href="img/hero-icon.ico">
 
-            <div id="herodiv" class="col"><img id="hero" src="img/hero-01.svg"></div>
-            <div class="mt-n2"><h1>homepaws</h1></div>
-            <div class="mb-4"><h2>busca en internet y ayuda a nuestros amigos de cuatro patitas</h2></div>
-            <div class="gcse-search"></div>
-            <!-- <div class="flex">
-                <p class="header-sub-title" id="word"></p><p class="header-sub-title blink">|</p>
-            </div> https://codepen.io/haaswill/pen/VKzXvZ-->
-            </div>
-        </div>
-       
+</head>
+
+<body>
+    <!-- NavBar -->
+    <div class="container-fluid mt-1">
+        <ul class="nav justify-content-end bg-transparent">
+            <li class="nav-item">
+                <button type="button" class="btn btn-primary" id="botonbookmark"><a href="javascript:void(0)" onClick="return rudr_favorite(this);">Añade homepaws a tus bookmarks</a></button>
+            </li>
+            <li class="nav-item linksnav">
+                <a class="nav-link" href="#tips">Tips</a>
+            </li>
+            <li class="nav-item linksnav">
+                <a class="nav-link" href="#adopta">Adopta</a>
+            </li>
+            <li class="nav-item linksnav">
+                <a class="nav-link" href="#patrocinadores">Nuestros patrocinadores</a>
+            </li>
+        </ul>
     </div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-4">
-                    <h3>Conéctate <br>con nosotros</h3>
-                    <div class="column">
-                        <img src="img/facebook.png"><br>
-                        <img src="img/twitter.png"><br>
-                        <img src="img/insta.png">
+
+    <!-- Hero -->
+    <div class="col-md-12 mt-4 justify-content-center">
+        <div id="hero" class="col-md-4"><img src="img/hero-01.svg"></div>
+        <div class="mt-n4">
+            <h1>homepaws</h1>
+        </div>
+        <div class="mt-3" id="Blinker">
+                <p>Busca en internet sobre <span class="header-sub-title" id="word"></span><span class="header-sub-title blink">|</span></p>
+                <p>y ayuda a nuestros amigos de cuatro patas</p>
                 </div>
-                <div class="col-md-4">
-                    <h3> Contacto</h3>
-                    <ul>
-                        <li>email: bark@homepaws.org</li>
-                        <li> teléfono: </li>
-                    </ul>
+
+        <!-- Google search -->
+        <div class="container">
+            
+            <div class="gcse-search"></div>
+        </div>
+    </div>
+
+    <!-- Carousel -->
+    <div class="row justify-content-center" id="tips">
+
+        <div class="bd-example w-75 p-3 h-50 mt-5 pt-5 pb-5">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-carousel mx-auto"
+                            src="https://www.stmatthewsanimalclinic.com/wp-content/uploads/2019/02/Does-My-Pet-Need-a-Dental-Cleaning.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo-carousel">¿Como lavarle los dientes a mi mascota?</h5>
+                            <p class="texto-carousel">La higiene bucal de nuestro peludo es sumamente importante, te
+                                contamos unos tips de
+                                como
+                                hacelo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-carousel"
+                            src="https://www.fvh.vet/blog/wp-content/uploads/2018/01/chubby-cat.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo-carousel">¿Mi mascota tiene sobrepeso?</h5>
+                            <p class="texto-carousel">Si tienes dudas sobre si tu mascota tiene unos kilos de más, te
+                                damos algunas pistas
+                                para
+                                que puedas asegurarte.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-carousel"
+                            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cat-relaxes-in-the-garden-royalty-free-image-468119524-1555623934.jpg"
+                            class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="titulo-carousel">¿Cómo quitar las pulgas de mi gato?</h5>
+                            <p class="texto-carousel">Si alguna vez te has preguntado ¿cómo quitar las pulgas de mi
+                                gato? definitivamente
+                                estas
+                                en el lugar correcto, aquí te explicamos diferentes maneras de hacerlo.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
 
-    </footer>
-    
-    
+    </div>
+
+
+    <!-- seccion de cards -->
+    <div class="container-fluid pt-3 pb-5 container-backg" id="adopta">
+        <h3 class="text-center">Adopta a tu nuevo mejor amigo</h3>
+        <div class="container w-75 pt-2">
+            <div class="card-deck">
+                <div class="card border-0">
+                    <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/72654116_2487361778201730_7817002673864966144_n.jpg?_nc_cat=111&_nc_oc=AQlI2ryzjRe2SRgrUnwLQMK5e9qcur7X7jGV6ch5jDtEUjnaP_1qurVRJu-U7fx_7AY&_nc_ht=scontent-mia3-2.xx&oh=1107abd833fdcda8e54eb27b895a1832&oe=5E330043"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mima</h5>
+                        <p class="card-text">Tiene 3 años y es sumamente cariñosa, le encantan los niños.</p>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
+                    </div>
+                </div>
+                <div class="card  border-0">
+                    <img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/71402239_2478433912427850_3282933848416976896_n.jpg?_nc_cat=106&_nc_oc=AQmJPvovJHXBPuAJ0RfQy5Zbs1s9UOaqZcxjCy456bMfalZ0R1q5coNhc98J2xKU0tg&_nc_ht=scontent-mia3-1.xx&oh=6236e59c50cea583d0d763338a7b63a3&oe=5E1F95B3"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Duke</h5>
+                        <p class="card-text">Fue abandonado por su familia y rescatado, necesita mucho amor en su nuevo
+                            hogar.
+                        </p>
+                        <button type="button " class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitud adopción</button>
+                    </div>
+
+                </div>
+                <div class="card border-0">
+                    <img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/70699655_2471354013135840_2136802064334848000_n.jpg?_nc_cat=107&_nc_oc=AQluE1UgofvIJl7Phd2_fRcLu1KQYiyM1Ia03gqkM2xAjdHAirsIHnTnwgiTjzpHgiI&_nc_ht=scontent-mia3-1.xx&oh=64058ebec351ac4a5d507bf5e52d7872&oe=5E19E47C"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lula</h5>
+                        <p class="card-text">La abandonaron luego de tener a sus hijos, la castramos y desparasitamos.
+                            Esta
+                            lista para recibir mucho amor.</p>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-deck card-deck2-mt">
+                <div class="card border-0">
+                    <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/72206568_2487361804868394_3688344263982055424_n.jpg?_nc_cat=101&_nc_oc=AQmxPvygyevs2vBtstazQutZWPmn_P4JRG0iV2d-5xewt0s5nvDXaYtQ6KNeSiI4Lpg&_nc_ht=scontent-mia3-2.xx&oh=1425006fe3b5d2f7b8ab975cf6fdf17e&oe=5E2123B8"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Totto</h5>
+                        <p class="card-text">Este caballero tiene 1 añito y muchisima energia para jugar.</p>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitud adopción</button>
+                    </div>
+
+                </div>
+                <div class="card border-0">
+                    <img src="https://scontent-mia3-2.xx.fbcdn.net/v/t1.0-9/69858949_2462795387325036_6700062897730486272_n.jpg?_nc_cat=103&_nc_oc=AQnX2fZvdKR46OvtEOanKwfWTMgLEYPrRzJSmyXVFJN4Du0vnhoERXbLpBdDmD9XjFo&_nc_ht=scontent-mia3-2.xx&oh=b42df592209733701cf9291e07431cba&oe=5E63DC0E"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lilly</h5>
+                        <p class="card-text">Doña Lilly es una veterana con un pasado muy dificil pero esperamos
+                            encontrarle
+                            un
+                            futuro dueño que la haga muy feliz.</p>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
+                    </div>
+                </div>
+                <div class="card border-0">
+                    <img src="https://scontent-mia3-1.xx.fbcdn.net/v/t1.0-9/72266338_2487535821517659_7308105386374987776_n.jpg?_nc_cat=108&_nc_oc=AQlNavfV7vzm698FTJ3KeDnrV_sFxS4HIRXsSbRD0C11QSb5ijIi2LWlvvWSpLWXVec&_nc_ht=scontent-mia3-1.xx&oh=b713c05a8dec2488583a58eca9e810b9&oe=5E1945D5"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mimi</h5>
+                        <p class="card-text"> Es una perrita adulta de tamano pequeno, sumamente dulce y juguetona </p>
+                        <button type="button" class="btn btn-danger btn-sm button-color" data-toggle="modal"
+                            data-target="#form-modal">Solicitar adopción</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Patrocinadores -->
+<div class="container mt-5" id="patrocinadores">
+<h3 class="text-center">Nuestros Patrocinadores</h3>
+        <div class="row mt-3 mb-5">
+            <div class="col-md-3">
+                <div class="card md-3 m-2 border-0">
+                    <img src="img/logo1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-center">La Vete</h5>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card md-3 m-2 border-0">
+                    <img src="img/logo2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-center">Super Perro</h5>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card md-3 m-2 border-0">
+                    <img src="img/logo3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-center">Hiper Mascotas</h5>
+                        </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card md-3 m-2 border-0">
+                    <img src="img/logo4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title text-center">Medipet</h5>
+                        </div>
+                </div>
+            </div>
+        </div>
+        
+</div>
+
+    <!-- Footer -->
+
+<div class="container-fluid footer-background">
+        <div class="row mt-3">
+            <div class="col-md-4 mt-3  pl-4">
+                <h4>Conéctate con nosotros</h4>
+
+                <ahref="https://www.facebook.com/homepaws"><img class="facebook-img" src="img/sm-fb.png" alt=""></a>  
+                <br>
+                <a href="https://www.instagram.com/homepaws"><img class="facebook-img" src="img/sm-insta.png" alt=""></a>  
+                <br>
+                <a href="https://www.twitter.com/homepaws"><img class="facebook-img" src="img/sm-tw.png" alt=""></a>  
+            </div>
+            <div class="col-md-4 mt-3">
+                    <h4>Contáctanos</h4>
+                    <p id="footer-text">Correo: <a href="mailto:miuu@homepaws.org">miuu@homepaws.org</a></p>
+                    <p id="footer-text">Telefono: 8383-2828</p>
+                    <p id="footer-text">San Jose, Costa Rica</p>
+            </div>
+            <div class="col-md-4 mt-3">
+                <h4>Quick links</h4>
+                <a href="#tips"><p id="footer-text-link">Tips</p></a>
+                <a href="#adopta"><p id="footer-text-link">Adopta</p></a>
+                <a href="#patrocinadores"><p id="footer-text-link">Nuestros Patrocinadores</p></a>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            Hecho con ♥ en San José, Costa Rica <br>
+            © Homepaws 2019
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="form-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Formuario para solicitud de adopción</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <div class="form-group">
+                                <label class="text-form-adopt" for="exampleFormControlTextarea1">Nombre completo</label>
+                                <textarea class="form-control text-form-adopt" id="exampleFormControlTextarea1"
+                                    rows="1" placeholder="Digita tu nombre aquí"></textarea>
+                                <label class="text-form-adopt" for="exampleFormControlTextarea1">Número
+                                    telefónico</label>
+                                <input type="email" class="form-control text-form2" id="exampleFormControlInput1"
+                                    placeholder="8888-8888">
+                                <label class="text-form-adopt" for="exampleFormControlInput1">Correo electrónico</label>
+                                <input type="email" class="form-control text-form2" id="exampleFormControlInput1"
+                                    placeholder="nombre@ejemplo.com">
+
+                                <h3 class="text-form-adopt">¿Posee usted otras mascotas?</h3>
+                                <div class="form-check">
+
+                                    <input class="form-check-input" type="checkbox" value="true" id="defaultCheck1">
+                                    <label class="form-check-label text-form-adopt" for="defaultCheck1">
+                                        Si
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="false" id="defaultCheck2">
+                                    <label class="form-check-label text-form-adopt" for="defaultCheck2">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary button-color">Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <script async src="https://cse.google.com/cse.js?cx=013733741547622417175:9dw619bugjm"></script>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
 </html>

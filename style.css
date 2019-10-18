@@ -1,60 +1,164 @@
-.img-carousel {
- width: 900px;
- height: 420px;
- object-fit: cover;
+/*---------------   General   ---------------*/
+body{
+    font-family: 'Fredoka One', cursive;
+}
+h1{
+    font-size: 72px !important;
+    color: #FF9191;
+    text-align: center;
+}
+h2{
+    font-size: 16px !important;
+    color: #5B5151;
+    text-align: center;
 }
 
-.titulo-carousel {
+h3{
+font-size: 32px !important;
+color: #5B5151;
+text-align: center;
+}
+/*---------------   CSS Navbar   ---------------*/
+#botonbookmark{
+    background-color: #FF9191 !important;
+    border-color: white;
+    color: white !important;
+}
+#botonbookmark a {
     color: white;
-    text-shadow: 2px 2px 4px #4d4848;
-    font-size: 20px;
-  }
+}
+.linksnav a{
+    color: #5B5151 !important;
+}
 
+/*---------------   CSS Hero   ---------------*/
+#hero{
+    display: block;
+    margin: auto;
+}
+.blink {
+    animation: blink 0.5s infinite;
+}
+@keyframes blink{
+    to { opacity: .0; }
+}
+.flex {
+    display: flex;
+}
+.header-sub-title {
+    color: #5B5151;
+    font-size: 20px;
+    padding: 0.1em;
+}
+#Blinker p{
+    text-align: center;
+    color: #5B5151;
+    font-size: 20px;
+}
+
+/*---------------   CSS Carrusel   ---------------*/
+.carousel {
+    max-width:900px;
+    width:100%;
+}
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: block !important;
+
+}
+.img-carousel {
+    width: 900px;
+    height: 420px;
+    object-fit: cover;
+}
+.titulo-carousel {
+color: white;
+text-shadow: 2px 2px 4px #4d4848;
+font-size: 20px;
+}
 .texto-carousel{
     color: white;
     text-shadow: 2px 2px 4px #4d4848;
     font-size: 15px;
 }
 
-body{
-    font-family: 'Fredoka One', cursive;
-}
-h1{
-    font-size: 36px !important;
-    color: #FF9191;
-    text-align: center;
-}
-h2{
-    font-size: 13px !important;
-    color: #5B5151;
-    text-align: center;
-}
+/*---------------   Cards   ---------------*/
 
-#herodiv{
-    clear: both;
-}
-#hero{
-    width: 20%;
-    margin: auto;
-    display: block;
-}
-
-.nav-link{
-    color: #5B5151 !important;
-}
-
-h3{
-    font-size: 15px !important;
-    color: #5B5151;
-
-}
-
-/* p>a {
-	color: #fd084a;
-}
-.blink {
-  animation: blink 0.5s infinite;
-}
-@keyframes blink{
-  to { opacity: .0; }
+/* .img-cards {
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
 } */
+#adopta p{
+    font-family: 'Open Sans', sans-serif;
+}
+.card-title {
+    font-size: 20px;
+    color: #5B5151;
+}
+.card-text {
+    font-size: 15px;
+    color: #5B5151;
+}
+.button-color {
+    background-color: #FF9191;
+    border-color: #FF9191;
+}
+.card-deck2-mt {
+    margin-top: 30px;
+}
+.container-backg {
+    background-image: linear-gradient(#E3F6F5, #5CDED0)
+}
+button.btn.btn-danger.btn-sm.button-color {
+    display: block;
+    margin: auto;
+}
+   /* Modal  */
+.text-form-adopt {
+    font-size: 15px;
+}
+.modal-title {
+    font-size: 20px;
+}
+.text-form2 {
+    font-weight: 2px;
+    font-size: 15px;
+}
+
+/*---------------   CSS Footer   ---------------*/
+.footer-background {
+    background-color: #5B5151;
+}
+
+.footerbackground p{
+    font-family: 'Open Sans', sans-serif;
+}
+.facebook-img {
+    width: 30px;
+    margin: 5px;
+
+}
+h4 {
+    font-size: 15px;
+    color: white
+}
+#footer-text {
+    font-size: 13px;
+    color: white;  
+    font-family: 'Open Sans', sans-serif; 
+}
+.footer-background a {
+    color: white;
+    font-size: 13px;   
+    font-family: 'Open Sans', sans-serif;
+}
+.copyright{
+    color: white;
+    font-size: 10px;  
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+
