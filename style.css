@@ -42,3 +42,19 @@ h2{
 .nav-link{
     color: #5B5151 !important;
 }
+
+h3{
+    font-size: 15px !important;
+    color: #5B5151;
+
+}
+
+/* p>a {
+	color: #fd084a;
+}
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+} */
