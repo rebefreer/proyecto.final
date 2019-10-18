@@ -42,16 +42,17 @@ h2{
 
 .card-title {
     font-size: 20px;
+    color: #5B5151;
 }
 
 .card-text {
     font-size: 15px;
+    color: #5B5151;
 }
 
 .button-color {
     background-color: #FF9191;
     border-color: #FF9191;
-
 }
 
 .card-deck2-mt {
@@ -81,3 +82,30 @@ button.btn.btn-danger.btn-sm.button-color {
     font-weight: 2px;
     font-size: 15px;
 }
+
+.footer-background {
+    background-color: #5B5151;
+}
+
+.facebook-img {
+    width: 30px;
+
+}
+
+h4 {
+    font-size: 15px;
+    color: white
+}
+
+#footer-text {
+    font-size: 13px;
+    color: white;
+    
+}
+
+.footer-background a {
+    color: white;
+    font-size: 13px;
+    
+}
+
